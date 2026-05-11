@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --cp:#547571; --cs:#79ADA8; --cpale:#EDF3F3;
+  --cp:#4A3728; --cs:#8C6B4A; --cpale:#F0E8DF;
   --ink:#1C1C1C; --ink2:#3C3B3B; --muted:#6B6B6B;
   --line:#E0E0E0; --surf:#F6F6F6; --white:#FFFFFF;
   --serif:'Lora',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
@@ -158,6 +158,13 @@ body{font-family:var(--sans);background:var(--white);color:var(--ink);line-heigh
     <path fill="rgba(255,255,255,.9)" d="M970.72,124.25c1.27.32,1.26,2.11,0,2.42s-2.45.61-3.69.96c-8.38,2.58-11.93,6.06-14.53,14.45-.36,1.28-.69,2.54-.99,3.81s-2.1,1.28-2.42,0c-.77-3.08-1.67-6.19-3.11-9.02-1.46-2.87-3.74-5.27-6.57-6.83s-6.25-2.59-9.64-3.4c-1.27-.3-1.27-2.11,0-2.42,3.61-.86,7.25-1.94,10.34-3.8,5.57-3.36,7.5-9.38,8.96-15.51.3-1.27,2.11-1.28,2.42,0,.87,3.65,1.91,7.2,3.78,10.32,1.39,2.32,3.39,4.24,5.76,5.54,3.01,1.66,6.38,2.65,9.71,3.48Z"/>
   </symbol>
 
+  <!-- Co-Pilot button — standalone star (AI signal) -->
+  <symbol id="I-copilot" viewBox="0 0 472.38 472.38">
+    <circle class="fp" fill="#547571" cx="236.19" cy="236.19" r="236.19"/>
+    <!-- Large 4-pointed star, centered -->
+    <path fill="rgba(255,255,255,0.92)" d="M236.19,96.5 c3.2,0,3.2,0,4.8,6.4 c8.5,35.2,15.2,42,50.4,50.4 c6.4,1.6,6.4,1.6,6.4,4.8 c0,3.2,0,3.2,-6.4,4.8 c-35.2,8.5,-42,15.2,-50.4,50.4 c-1.6,6.4,-1.6,6.4,-4.8,6.4 c-3.2,0,-3.2,0,-4.8,-6.4 c-8.5,-35.2,-15.2,-42,-50.4,-50.4 c-6.4,-1.6,-6.4,-1.6,-6.4,-4.8 c0,-3.2,0,-3.2,6.4,-4.8 c35.2,-8.5,42,-15.2,50.4,-50.4 C233,96.5,233,96.5,236.19,96.5z"/>
+    <path class="fp" fill="#547571" d="M236.19,96.5 c3.2,0,3.2,0,4.8,6.4 c8.5,35.2,15.2,42,50.4,50.4 c6.4,1.6,6.4,1.6,6.4,4.8 c0,3.2,0,3.2,-6.4,4.8 c-35.2,8.5,-42,15.2,-50.4,50.4 c-1.6,6.4,-1.6,6.4,-4.8,6.4 c-3.2,0,-3.2,0,-4.8,-6.4 c-8.5,-35.2,-15.2,-42,-50.4,-50.4 c-6.4,-1.6,-6.4,-1.6,-6.4,-4.8 c0,-3.2,0,-3.2,6.4,-4.8 c35.2,-8.5,42,-15.2,50.4,-50.4 C233,96.5,233,96.5,236.19,96.5z" opacity="0"/>
+  </symbol>
   <!-- App icon · Star variant -->
   <symbol id="I-star" viewBox="0 0 472.38 472.38">
     <circle class="fp" fill="#547571" cx="236.19" cy="236.19" r="236.19"/>
@@ -191,7 +198,8 @@ body{font-family:var(--sans);background:var(--white);color:var(--ink);line-heigh
 <div class="picker">
   <span class="pick-label">Palette</span>
   <div class="pick-swatches">
-    <button class="pk active" data-theme="teal"   style="background:#547571" title="Teal · Original"></button>
+    <button class="pk" data-theme="teal"   style="background:#547571" title="Teal · Original"></button>
+    <button class="pk active" data-theme="bark"   style="background:#4A3728" title="Bark + Latte (v2)"></button>
     <button class="pk"        data-theme="amber"  style="background:#9B7520" title="Amber Gold"></button>
     <button class="pk"        data-theme="ochre"  style="background:#C5861A" title="Warm Ochre"></button>
     <button class="pk"        data-theme="orange" style="background:#C05818" title="Burnt Orange"></button>
@@ -243,6 +251,14 @@ body{font-family:var(--sans);background:var(--white);color:var(--ink);line-heigh
         <div class="isi"><svg viewBox="0 0 472.38 472.38" style="width:20px;height:20px;border-radius:4px;"><use href="#I-circle"/></svg><span>20px</span></div>
       </div>
       <div><div class="ll on-l">Scale Behavior</div><div class="ln on-l">Star reads at 36px+. Use circle below 28px.</div></div>
+    </div>
+    <div class="lc bg-white">
+      <div class="icon-row">
+        <svg viewBox="0 0 472.38 472.38" style="width:80px;height:80px;border-radius:50%;"><use href="#I-copilot"/></svg>
+        <svg viewBox="0 0 472.38 472.38" style="width:60px;height:60px;border-radius:50%;"><use href="#I-copilot"/></svg>
+        <svg viewBox="0 0 472.38 472.38" style="width:44px;height:44px;border-radius:50%;"><use href="#I-copilot"/></svg>
+      </div>
+      <div><div class="ll on-l">Co-Pilot Button — Star (AI Signal)</div><div class="ln on-l">Floating button + nav center. Star = AI. Distinct from home icon.</div></div>
     </div>
   </div>
 </section>
@@ -535,6 +551,7 @@ const T = {
   coral:  {n:'Coral Red',         p:'#B54030', s:'#D96E5E', pale:'#FAF0EE', pn:'Deep Coral',   sn:'Salmon',        palen:'Blush Tint'},
   plum:   {n:'Plum',              p:'#6B3E7A', s:'#9B72AE', pale:'#F3EEF7', pn:'Plum',         sn:'Lavender',      palen:'Lavender Tint'},
   sienna: {n:'Sienna',            p:'#7A4A2A', s:'#C07A50', pale:'#F5EFE8', pn:'Sienna',       sn:'Warm Tan',      palen:'Sand Tint'},
+  bark:   {n:'Bark + Latte',       p:'#4A3728', s:'#8C6B4A', pale:'#F0E8DF', pn:'Bark',         sn:'Latte',         palen:'Linen Tint'},
 };
 
 function setTheme(key) {
@@ -566,6 +583,8 @@ function setTheme(key) {
   // Update picker active state
   document.querySelectorAll('.pk').forEach(el => el.classList.remove('active'));
   document.querySelector(`.pk[data-theme="${key}"]`).classList.add('active');
+  // Update Co-Pilot button circle color to match primary
+  document.querySelectorAll('.fp-copilot').forEach(el => el.setAttribute('fill', t.p));
 }
 
 // Click-to-copy hex
@@ -582,6 +601,7 @@ function copyHex(hex) {
 document.querySelectorAll('.pk').forEach(btn =>
   btn.addEventListener('click', () => setTheme(btn.dataset.theme))
 );
+setTheme('bark');
 
 // Nav scroll spy
 document.querySelectorAll('section[id]').forEach(s =>
